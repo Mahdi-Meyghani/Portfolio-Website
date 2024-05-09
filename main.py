@@ -31,13 +31,13 @@ with col2:
     st.markdown("<h1 class='slide-in-left'> Mahdi Meyghani</h1>",
                 unsafe_allow_html=True)
 
-    st.markdown("""<p class="big-font slide-in-left">Hi, I am Mahdi.
-    I am a Python programmer focusing on backend.
-    I also have a background in graphics, but it doesn't matter because right now
-    my passion and all my time is spent on technology, anyway below you can find
-    some of the Apps
-    i have built in Python, Feel free to contact me !</p>""",
-                unsafe_allow_html=True)
+    # st.markdown("""<p class="big-font slide-in-left">Hi, I am Mahdi.
+    # I am a Python programmer focusing on backend.
+    # I also have a background in graphics, but it doesn't matter because right now
+    # my passion and all my time is spent on technology, anyway below you can find
+    # some of the Apps
+    # i have built in Python, Feel free to contact me !</p>""",
+    #             unsafe_allow_html=True)
 
     # st.text_area("""Hi, I am Mahdi. I am a Python programmer focusing on backend.
     # I also have a background in graphics, but it doesn't matter because right now
@@ -50,17 +50,18 @@ with col2:
     # below you can see some of my projects."""
     # st.info(content)
 
-    # st.write("""<p class="big-font slide-in-left">Hi, I am Mahdi. I am a Python programmer focusing on backend.
-    # I also have a background in graphics, but it doesn't matter because right now
-    # my passion and all my time is spent on technology, anyway,
-    # below you can see some of my projects.</p>""", unsafe_allow_html=True)
+    st.write("""Hi, I am Mahdi.
+    I am a Python programmer focusing on backend.
+    I also have a background in graphics, but it doesn't matter because right now
+    my passion and all my time is spent on technology, anyway below you can find
+    some of the Apps
+    i have built in Python, Feel free to contact me !""")
 with col3:
     st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
                 unsafe_allow_html=True)
 
-    st.markdown("""<p class="big-font slide-in-left">A distraction-free web app
-    to help you focus on your goals :)</p>""",
-                unsafe_allow_html=True)
+    st.write("""A distraction-free web app
+    to help you focus on your goals :)""",)
 
     st.image("1.png")
 
@@ -70,9 +71,8 @@ with col3:
     st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
                 unsafe_allow_html=True)
 
-    st.markdown("""<p class="big-font slide-in-left">A distraction-free web app
-    to help you focus on your goals :)</p>""",
-                unsafe_allow_html=True)
+    st.write("""A distraction-free web app
+    to help you focus on your goals :)""",)
 
     st.image("1.png")
 
@@ -83,9 +83,8 @@ with col4:
     st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
                 unsafe_allow_html=True)
 
-    st.markdown("""<p class="big-font slide-in-left">A portfolio website built
-    entirely in Python to showcase coding projects.</p>""",
-                unsafe_allow_html=True)
+    st.write("""A portfolio website built
+    entirely in Python to showcase coding projects.""")
 
     st.image("2.png")
 
@@ -95,12 +94,10 @@ with col4:
     st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
                 unsafe_allow_html=True)
 
-    st.markdown("""<p class="big-font slide-in-left">A portfolio website built
-    entirely in Python to showcase coding projects.</p>""",
-                unsafe_allow_html=True)
+    st.write("""A portfolio website built
+    entirely in Python to showcase coding projects.""")
 
     st.image("2.png")
 
     st.write("<a href='#' id='https://github.com/Mahdi-Meyghani/ToDo-Web-App'>"
              "Source Code</a>", unsafe_allow_html=True)
-
