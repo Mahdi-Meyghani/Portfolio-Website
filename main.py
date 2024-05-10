@@ -1,10 +1,8 @@
 import streamlit as st
+import pandas
 
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
-col3, col4 = st.columns(2)
-
-
 
 # background-image: linear-gradient( 179.7deg,  rgba(249,21,215,1) 1.1%, rgba(22,0,98,1) 99% );
 # background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
@@ -30,12 +28,15 @@ st.markdown("""
 .slide-in-left {
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
-.big-font {
-    font-size:20px !important;
-    height: 1px;
-}
+
 </style>
 """, unsafe_allow_html=True)
+
+# .big-font {
+#     font-size:20px !important;
+#     height: 1px;
+# }
+
 
 with col1:
     st.image("pictures/me.jpg")
@@ -71,44 +72,58 @@ with col2:
     i have built in Python, Feel free to contact me !</font></p>""", unsafe_allow_html=True)
 
     st.image("pictures/arrow.png")
+
+col3, col4 = st.columns(2)
+df = pandas.read_csv("data.csv", sep=";")
+
 with col3:
-    st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
-                unsafe_allow_html=True)
 
-    st.write("""A distraction-free web app
-    to help you focus on your goals :)""", )
+    for index, row in df[:10].iterrows():
+        title = row["title"]
+        st.markdown(f"<h1 class='slide-in-left'>{title}</h1>",
+                    unsafe_allow_html=True)
 
-    st.image("pictures/1.png")
-
-    st.write("[Source Code](https://github.com/Mahdi-Meyghani)")
-    # --------------------------------------------------------------------------
-    st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
-                unsafe_allow_html=True)
-
-    st.write("""A distraction-free web app
-    to help you focus on your goals :)""", )
-
-    st.image("pictures/1.png")
-
-    st.write("[Source Code](https://github.com/Mahdi-Meyghani)")
+    # st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
+    #             unsafe_allow_html=True)
+    #
+    # st.write("""A distraction-free web app
+    # to help you focus on your goals :)""", )
+    #
+    # st.image("pictures/1.png")
+    #
+    # st.write("[Source Code](https://github.com/Mahdi-Meyghani)")
+    # # --------------------------------------------------------------------------
+    # st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
+    #             unsafe_allow_html=True)
+    #
+    # st.write("""A distraction-free web app
+    # to help you focus on your goals :)""", )
+    #
+    # st.image("pictures/1.png")
+    #
+    # st.write("[Source Code](https://github.com/Mahdi-Meyghani)")
 
 with col4:
-    st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
-                unsafe_allow_html=True)
-
-    st.write("""A portfolio website built
-    entirely in Python to showcase coding projects.""")
-
-    st.image("pictures/2.png")
-
-    st.write("[Source code](https://github.com/Mahdi-Meyghani)")
-    # --------------------------------------------------------------------------
-    st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
-                unsafe_allow_html=True)
-
-    st.write("""A portfolio website built
-    entirely in Python to showcase coding projects.""")
-
-    st.image("pictures/2.png")
-
-    st.write("[Source code](https://github.com/Mahdi-Meyghani)")
+    for index, row in df[10:].iterrows():
+        title = row["title"]
+        st.markdown(f"<h1 class='slide-in-left'>{title}</h1>",
+                    unsafe_allow_html=True)
+#     st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
+#                 unsafe_allow_html=True)
+#
+#     st.write("""A portfolio website built
+#     entirely in Python to showcase coding projects.""")
+#
+#     st.image("pictures/2.png")
+#
+#     st.write("[Source code](https://github.com/Mahdi-Meyghani)")
+#     # --------------------------------------------------------------------------
+#     st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
+#                 unsafe_allow_html=True)
+#
+#     st.write("""A portfolio website built
+#     entirely in Python to showcase coding projects.""")
+#
+#     st.image("pictures/2.png")
+#
+#     st.write("[Source code](https://github.com/Mahdi-Meyghani)")
