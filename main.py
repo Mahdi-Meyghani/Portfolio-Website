@@ -4,9 +4,6 @@ import pandas
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
 
-# background-image: linear-gradient( 179.7deg,  rgba(249,21,215,1) 1.1%, rgba(22,0,98,1) 99% );
-# background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
-
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"]{
@@ -32,37 +29,12 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# .big-font {
-#     font-size:20px !important;
-#     height: 1px;
-# }
-
-
 with col1:
     st.image("pictures/me.jpg")
 
 with col2:
     st.markdown("<h1 class='slide-in-left'> Mahdi Meyghani</h1>",
                 unsafe_allow_html=True)
-
-    # st.markdown("""<p class="big-font slide-in-left">Hi, I am Mahdi.
-    # I am a Python programmer focusing on backend.
-    # I also have a background in graphics, but it doesn't matter because right now
-    # my passion and all my time is spent on technology, anyway below you can find
-    # some of the Apps
-    # i have built in Python, Feel free to contact me !</p>""",
-    #             unsafe_allow_html=True)
-
-    # st.text_area("""Hi, I am Mahdi. I am a Python programmer focusing on backend.
-    # I also have a background in graphics, but it doesn't matter because right now
-    # my passion and all my time is spent on technology, anyway,
-    # below you can see some of my projects.""", height=200)
-
-    # content = """Hi, I am Mahdi. I am a Python programmer focusing on backend.
-    # I also have a background in graphics, but it doesn't matter because right now
-    # my passion and all my time is spent on technology, anyway,
-    # below you can see some of my projects."""
-    # st.info(content)
 
     st.write("""<font size='+4'><p class='slide-in-left'>Hi, I am Mahdi.
     I am a Python programmer focusing on backend.
@@ -73,57 +45,39 @@ with col2:
 
     st.image("pictures/arrow.png")
 
-col3, col4 = st.columns(2)
+col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("data.csv", sep=";")
 
 with col3:
-
     for index, row in df[:10].iterrows():
         title = row["title"]
         st.markdown(f"<h1 class='slide-in-left'>{title}</h1>",
                     unsafe_allow_html=True)
 
-    # st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
-    #             unsafe_allow_html=True)
-    #
-    # st.write("""A distraction-free web app
-    # to help you focus on your goals :)""", )
-    #
-    # st.image("pictures/1.png")
-    #
-    # st.write("[Source Code](https://github.com/Mahdi-Meyghani)")
-    # # --------------------------------------------------------------------------
-    # st.markdown("<h1 class='slide-in-left'> To Do App</h1>",
-    #             unsafe_allow_html=True)
-    #
-    # st.write("""A distraction-free web app
-    # to help you focus on your goals :)""", )
-    #
-    # st.image("pictures/1.png")
-    #
-    # st.write("[Source Code](https://github.com/Mahdi-Meyghani)")
+        description = row["description"]
+        st.markdown(f"<p class='slide-in-left'>{description}</p>",
+                    unsafe_allow_html=True)
+
+        image = "pictures/" + row["image"]
+        st.image(image)
+
+        link = row["url"]
+        st.write(f"[Source Code]({link})")
 
 with col4:
     for index, row in df[10:].iterrows():
         title = row["title"]
         st.markdown(f"<h1 class='slide-in-left'>{title}</h1>",
                     unsafe_allow_html=True)
-#     st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
-#                 unsafe_allow_html=True)
-#
-#     st.write("""A portfolio website built
-#     entirely in Python to showcase coding projects.""")
-#
-#     st.image("pictures/2.png")
-#
-#     st.write("[Source code](https://github.com/Mahdi-Meyghani)")
-#     # --------------------------------------------------------------------------
-#     st.markdown("<h1 class='slide-in-left'> Portfolio Website</h1>",
-#                 unsafe_allow_html=True)
-#
-#     st.write("""A portfolio website built
-#     entirely in Python to showcase coding projects.""")
-#
-#     st.image("pictures/2.png")
-#
-#     st.write("[Source code](https://github.com/Mahdi-Meyghani)")
+
+        description = row["description"]
+        st.markdown(f"<p class='slide-in-left'>{description}</p>",
+                    unsafe_allow_html=True)
+
+        image = "pictures/" + row["image"]
+        st.image(image)
+
+        link = row["url"]
+        st.write(f"[Source Code]({link})")
+
+st.write("[Click for more...](https://github.com/Mahdi-Meyghani)")
