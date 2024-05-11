@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Mahd")
 col1, col2 = st.columns(2)
+
 
 page_bg_img = """
 <style>
@@ -11,7 +12,6 @@ background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113
 <style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
 st.markdown("""
 <style>
 @keyframes slideInFromLeft {
