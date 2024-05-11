@@ -39,7 +39,7 @@ with col2:
     I'm Mahdi, 
     I'm a Python programmer focusing on backend. 
     I spend most of my time working with awesome technologies like 
-    Django, Docker, and SQL databases, etc. 
+    Django, Docker, SQL databases, etc. 
     I love collaborating with teams and I'm always excited to 
     learn and adapt to new tech! Below, you can find some of the cool Apps 
     I have built in Python. Feel free to contact me !</font></p>""",
