@@ -35,13 +35,15 @@ with col1:
 with col2:
     st.markdown("<h1 class='slide-in-left'> Mahdi Meyghani</h1>",
                 unsafe_allow_html=True)
-
-    st.write("""<font size='+4'><p class='slide-in-left'>Hi, I am Mahdi.
-    I am a Python programmer focusing on backend.
-    I also have a background in graphics, but it doesn't matter because right now
-    my passion and all my time is spent on technology, anyway below you can find
-    some of the Apps
-    i have built in Python, Feel free to contact me !</font></p>""", unsafe_allow_html=True)
+    st.write("""<font size='+4'><p class='slide-in-left'>Hello there! 👋 
+    I'm Mahdi, 
+    I'm a Python programmer focusing on backend. 
+    I spend most of my time working with awesome technologies like 
+    Django, Docker, and SQL databases, etc. 
+    I love collaborating with teams and I'm always excited to 
+    learn and adapt to new tech! Below, you can find some of the cool Apps 
+    I have built in Python. Feel free to contact me !</font></p>""",
+             unsafe_allow_html=True)
 
     st.image("pictures/arrow.png")
 
