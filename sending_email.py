@@ -1,11 +1,9 @@
 import smtplib
 import ssl
-import os
-
 
 def send_email(email_address: str, message: str):
     user = "mahdimeyghani02@gmail.com"
-    password = os.getenv("PortfolioPass")
+    password = "exit sttz mqbo lfni"
 
     host = "smtp.gmail.com"
     port = 465
