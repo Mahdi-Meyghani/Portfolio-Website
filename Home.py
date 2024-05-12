@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas
 
-st.set_page_config(layout="wide", page_title="Mahd")
+st.set_page_config(layout="wide", page_title="Mahdi")
 col1, col2 = st.columns(2)
 
 
