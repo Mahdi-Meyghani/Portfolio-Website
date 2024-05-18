@@ -1,5 +1,6 @@
 import streamlit as st
 import sending_email
+import requests
 
 st.set_page_config(layout="wide")
 page_bg_img = """
@@ -52,3 +53,44 @@ with st.form(key="form"):
             st.write("<p class='slide-in-left' style='color: red'>"
                      "Fill the BOXES first !</p>",
                      unsafe_allow_html=True)
+
+
+# Get the API content
+API_KEY = "1VN1PYKrNZpb6NIW71gfgvAPgXJyi9Fko1J4oweV"
+
+response = requests.get("https://api.nasa.gov/"
+                        "planetary/"
+                        "apod?"
+                        f"api_key={API_KEY}")
+
+
+content = response.json()
+
+title = content["title"]
+description = content["explanation"]
+image_url = content["url"]
+date = content["date"]
+
+# Create streamlit page
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+
+st.markdown(f"<h1 class='slide-in-left'>Astronomy Picture Of The Day</h1>",
+            unsafe_allow_html=True)
+
+st.write("<p class='slide-in-left'>This is the "
+         "Astronomy Picture Of the day by NASA's official website, "
+         "which is updated daily. :)</p>",
+         unsafe_allow_html=True)
+
+st.markdown(f"<h2 class='slide-in-left'>{title}</h2>",
+            unsafe_allow_html=True)
+
+st.image(image_url)
+st.write(f"<p class='slide-in-left'>{description}</p>",
+         unsafe_allow_html=True)
+st.subheader(date)
+
+
