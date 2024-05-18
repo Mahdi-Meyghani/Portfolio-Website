@@ -89,8 +89,8 @@ st.markdown(f"<h2 class='slide-in-left'>{title}</h2>",
             unsafe_allow_html=True)
 
 st.image(image_url)
+
 st.write(f"<p class='slide-in-left'>{description}</p>",
          unsafe_allow_html=True)
+
 st.subheader(date)
-
-
