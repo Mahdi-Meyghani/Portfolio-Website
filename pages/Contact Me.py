@@ -72,11 +72,6 @@ image_url = content["url"]
 date = content["date"]
 
 # Create streamlit page
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-
 st.markdown(f"<h1 class='slide-in-left'>Astronomy Picture Of The Day</h1>",
             unsafe_allow_html=True)
 
