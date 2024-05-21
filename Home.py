@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas
 
-st.set_page_config(layout="wide", page_title="Mahdi")
+st.set_page_config(layout="wide", page_title="Mahdi Meyghani")
 col1, col2 = st.columns(2)
 
 
@@ -11,7 +11,9 @@ page_bg_img = """
 background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );}
 <style>
 """
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 @keyframes slideInFromLeft {
@@ -35,6 +37,7 @@ with col1:
 with col2:
     st.markdown("<h1 class='slide-in-left'> Mahdi Meyghani</h1>",
                 unsafe_allow_html=True)
+
     st.write("""<font size='+4'><p class='slide-in-left'>Hello there! 👋 
     I'm Mahdi, 
     I'm a Python programmer focusing on backend. 
