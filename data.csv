@@ -13,7 +13,7 @@ Webcam Motion Detector;A program that monitors the computer webcam and sends an 
 Book Analysis;This app is designed to perform comprehensive data analysis and natural language processing (NLP) on a book.;https://github.com/Mahdi-Meyghani/Book-Analysis;12.png
 Internet Speed Analysis;A program that records the internet speed every few seconds and plots the values on the browser.;https://github.com/Mahdi-Meyghani;13.png
 Monitoring Data;A program that monitors a particular website and periodically records the data to a remote server.;https://github.com/Mahdi-Meyghani;14.png
-Visualizing Data;A program that visualizes the data collected in the previous monitoring program. ;https://github.com/Mahdi-Meyghani;15.png
+Movie Recommendation System;A movie recommendation system to show the recommended movies related to a particular movie.;https://github.com/Mahdi-Meyghani/Movie-Recommendation-System;15.png
 Visualizing Weather Forecast;A data web app that visualizes the weather forecast for the next five days of any city.;https://github.com/Mahdi-Meyghani/Weather-Forecast-Data-App;16.png
 Student Management System;A desktop PyQt6 GUI app for managing university student data with an SQL database backend.;https://github.com/Mahdi-Meyghani/Student-Management-System;17.png
 School Management System;A desktop PyQt6 GUI app for managing complex university data with a MySQL database backend.;https://github.com/Mahdi-Meyghani/School-Management-System;18.png
