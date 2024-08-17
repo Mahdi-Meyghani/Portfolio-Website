@@ -8,9 +8,9 @@ Weather API;A REST API built with Python and Flask to serve historical weather d
 Hotel Booking;An app through which you can reserve an available hotel using your credit card.;https://github.com/Mahdi-Meyghani/Hotel-Booking;7.png
 Tour Scraper;A program that checks a music band's website and sends an email when there are new tours.;https://github.com/Mahdi-Meyghani/Music_Tour_Scraper;8.png
 Helper Chatbot;A chatbot that knows about a specific topic and answers questions regarding that topic.;https://github.com/Mahdi-Meyghani;9.png
-Open Domain Chatbot;A chatbot built that can discuss anything with a human and is built using the Facebook API.;https://github.com/Mahdi-Meyghani;10.png
+AI Chatbot;A chatbot built that can discuss anything with a human and is built using the OpenAI API.;https://github.com/Mahdi-Meyghani/AI-Chatbot;10.png
 Webcam Motion Detector;A program that monitors the computer webcam and sends an email when a new object enters the view.;https://github.com/Mahdi-Meyghani/Webcam-Motion-Detector;11.png
-Book Analysis;This app is designed to perform comprehensive data analysis and natural language processing (NLP) on a book.;https://github.com/Mahdi-Meyghani;12.png
+Book Analysis;This app is designed to perform comprehensive data analysis and natural language processing (NLP) on a book.;https://github.com/Mahdi-Meyghani/Book-Analysis;12.png
 Internet Speed Analysis;A program that records the internet speed every few seconds and plots the values on the browser.;https://github.com/Mahdi-Meyghani;13.png
 Monitoring Data;A program that monitors a particular website and periodically records the data to a remote server.;https://github.com/Mahdi-Meyghani;14.png
 Visualizing Data;A program that visualizes the data collected in the previous monitoring program. ;https://github.com/Mahdi-Meyghani;15.png
